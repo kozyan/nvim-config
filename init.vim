@@ -14,7 +14,7 @@ if exists("g:vscode")
         Plug 'vim-scripts/argtextobj.vim'
         Plug 'kylechui/nvim-surround'
     call plug#end()
-elesif exists("g:neovide")
+elseif exists("g:neovide")
 	lua require('core.init')
 	
 	" Neovide config
