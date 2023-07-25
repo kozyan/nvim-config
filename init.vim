@@ -1,13 +1,23 @@
-lua require('core.init')
-
+let mapleader=";"
 set clipboard^=unnamed,unnamedplus
 
 if has('unix')
 	set thesaurus+=/usr/share/dict/words
 endif
 
-if exists("g:neovide")
-    " Neovide config
+if exists("g:vscode")
+    call plug#begin('~/.nvim/plugins')
+        " inside；plug#begin:
+        " Plug 'easymotion/vim-easymotion'
+        Plug 'tpope/vim-surround'
+        Plug 'asvetliakov/vim-easymotion'
+        Plug 'vim-scripts/argtextobj.vim'
+        Plug 'kylechui/nvim-surround'
+    call plug#end()
+elesif exists("g:neovide")
+	lua require('core.init')
+	
+	" Neovide config
 	let g:neovide_refresh_rate=24	" come on it's just a text editor
 	let g:neovide_transparency=1.0
 	let g:neovide_scroll_animation_length = 0.3
@@ -21,6 +31,11 @@ if exists("g:neovide")
 	let g:neovide_cursor_vfx_mode = "wireframe"
 	let g:neovide_remember_window_size = v:true
 endif
+
+
+let g:EasyMotion_smartcase = 1
+nmap <Leader><Leader>z <Plug>(easymotion-jumptoanywhere)
+nmap <Leader><Leader>x <Plug>(easymotion-s2)
 
 autocmd FileType markdown setlocal spell
 
