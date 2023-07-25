@@ -6,6 +6,7 @@ return require('packer').startup(function()
     use 'nvim-lua/plenary.nvim'
     use 'MunifTanjim/nui.nvim'
 
+    --use 'ldelossa/nvim-ide'
     use 'nvim-tree/nvim-tree.lua'
 
     -- starup time optimise
