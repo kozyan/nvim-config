@@ -98,4 +98,13 @@ return require('packer').startup(function()
             "nvim-telescope/telescope.nvim",
         }
     }
+
+    -- 'vim-easymotion'
+    use 'vim-easymotion/vim-easymotion'
+    -- tpope/vim-surround
+    use 'tpope/vim-surround'
+    -- vim-scripts/argtextobj.vim
+    use 'vim-scripts/argtextobj.vim'
+    -- kylechui/nvim-surround
+    use 'kylechui/nvim-surround'
 end)
