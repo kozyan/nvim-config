@@ -8,6 +8,9 @@
 <img src="https://i.imgur.com/lh8K1GW.png" alt="Floating terminal" width="49%"/><br>
 <img src="https://i.imgur.com/N61fK6b.png" alt="Telescope search" width="49%"/><br>
 
+## 安装前需要安装 JetBrainsMono Nerd Font Mono 字体
+https://www.nerdfonts.com/font-downloads
+
 ## Setup
 0. Use the latest version of NVIM
 1. Install `packer.nvim`
